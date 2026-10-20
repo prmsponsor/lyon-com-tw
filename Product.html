@@ -1,0 +1,408 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>型號頁 GRECA L4 設計稿</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Noto+Sans+TC:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:Inter,'Noto Sans TC','Microsoft JhengHei',system-ui,sans-serif;color:#1C2733;background:#FFFFFF}
+*{box-sizing:border-box}
+a{color:#0678D0}a:hover{color:#0E4176}
+h1,h2,h3,h4{margin:0;color:#0E4176;letter-spacing:.01em;line-height:1.3}
+p{margin:0}
+.wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:8px;font-weight:700;font-size:15px;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:inherit;line-height:1}
+.btn-primary{background:#0E4176;color:#FFFFFF}.btn-primary:hover{background:#0A315A;color:#FFFFFF}
+.btn-blue{background:#0678D0;color:#FFFFFF}.btn-blue:hover{background:#0563AD;color:#FFFFFF}
+.btn-outline{border-color:#0E4176;color:#0E4176;background:#FFFFFF}.btn-outline:hover{background:#EEF3F9;color:#0E4176}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.12em;color:#0678D0}
+.muted{color:#5B6B7C}
+.card{background:#FFFFFF;border:1px solid #D9E1EC;border-radius:12px;overflow:hidden}
+.tag{display:inline-block;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px}
+.g{display:grid;gap:24px}
+.c2{grid-template-columns:repeat(2,minmax(0,1fr))}.c3{grid-template-columns:repeat(3,minmax(0,1fr))}.c4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.split{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px;align-items:start}
+table.spec{width:100%;border-collapse:collapse;font-size:14px}
+table.spec th{background:#0E4176;color:#FFFFFF;text-align:left;padding:10px 12px;font-weight:600;white-space:nowrap}
+table.spec td{padding:10px 12px;border-bottom:1px solid #E3E9F1;vertical-align:top}
+table.spec tbody tr:nth-child(even) td{background:#F7F9FC}
+.tabs{display:flex;gap:4px;border-bottom:2px solid #D9E1EC;overflow-x:auto}
+.tabs a{padding:14px 18px;font-weight:700;font-size:15px;color:#5B6B7C;text-decoration:none;border-bottom:3px solid transparent;margin-bottom:-2px;white-space:nowrap}
+.tabs a.on{color:#0E4176;border-bottom-color:#0678D0}
+.prof{display:flex;flex-direction:column;align-items:center;gap:6px;padding:10px 8px;border:1px solid #D9E1EC;border-radius:10px;text-decoration:none;color:#1C2733;font-size:13px;font-weight:600;min-width:84px;background:#FFFFFF}
+.prof.on{border-color:#0678D0;background:#E3F0FB;color:#0E4176}
+.nav-item .dd{display:none}.nav-item:hover .dd{display:grid}
+.faq summary{cursor:pointer;font-weight:700;color:#0E4176;font-size:16px;padding:16px 0;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq details{border-bottom:1px solid #D9E1EC}.faq p{padding-bottom:16px;line-height:1.7;color:#5B6B7C;font-size:15px}
+input,select,textarea{font-family:inherit;font-size:15px;padding:12px 14px;border:1px solid #C5D0DD;border-radius:8px;width:100%;background:#FFFFFF;color:#1C2733}
+label.f{font-size:13px;font-weight:700;display:block;margin-bottom:6px}
+@media(max-width:960px){.c3,.c4{grid-template-columns:repeat(2,minmax(0,1fr))}.split{grid-template-columns:1fr;gap:28px}.nav-links,.nav-cta{display:none !important}.nav-burger{display:inline-flex !important}.topbar{display:none}.foot-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}}
+@media(max-width:600px){.c2,.c3,.c4{grid-template-columns:1fr}.wrap{padding:0 16px}.foot-grid{grid-template-columns:1fr !important}}
+</style>
+</head><body><div style="display: flex; flex-direction: column; min-width: 0">
+<header style="font-family: Inter, 'Noto Sans TC', 'Microsoft JhengHei', system-ui, sans-serif; background: #FFFFFF; color: #1C2733; box-sizing: border-box">
+  <div class="topbar" style="background: #0E4176; color: #FFFFFF; font-size: 13px">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 0 32px; min-height: 36px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+      <span style="opacity: .92">1994 年創立 · 台南製造 · PC 採光浪板專業製造商</span>
+      <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap">
+        <a href="#" style="color: #FFFFFF; text-decoration: none">+886-6-578-4093</a>
+        <a href="#" style="color: #FFFFFF; text-decoration: none">sales@lyon.com.tw</a>
+        <span style="display: inline-flex; gap: 10px; align-items: center; padding-left: 16px; border-left: 1px solid rgba(255,255,255,.35)">
+          <a href="#" style="color: #FFFFFF; opacity: .8; text-decoration: none">EN</a>
+          <a href="#" aria-current="page" style="color: #FFFFFF; font-weight: 700; text-decoration: none">繁中</a>
+          <a href="#" style="color: #FFFFFF; opacity: .8; text-decoration: none">ES</a>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div style="border-bottom: 1px solid #D9E1EC">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 0 32px; min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 24px">
+      <a href="Main.html" aria-label="立洋塑膠首頁" style="display: flex; align-items: center; text-decoration: none">
+        <img src="assets/logo.jpg" alt="立洋塑膠有限公司" style="height: 44px; width: auto; display: block">
+      </a>
+      <nav class="nav-links" aria-label="主選單" style="display: flex; align-items: center; gap: 4px">
+        <div class="nav-item" style="position: relative">
+          <a href="Category.html" style="display: inline-flex; align-items: center; gap: 6px; padding: 12px 14px; color: #1C2733; font-weight: 600; font-size: 15px; text-decoration: none; border-radius: 8px">產品
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+          <div class="dd" style="display: none; position: absolute; top: 100%; left: 0; z-index: 20; background: #FFFFFF; border: 1px solid #D9E1EC; border-radius: 12px; box-shadow: 0 16px 40px rgba(14,65,118,.14); padding: 20px; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; width: 720px">
+            <div style="display: flex; flex-direction: column; gap: 8px">
+              <a href="Category.html" style="font-weight: 700; color: #0E4176; text-decoration: none; font-size: 14px">PC 採光浪板</a>
+              <a href="Product.html" style="color: #1C2733; text-decoration: none; font-size: 14px">GRECA 方浪 · L4</a>
+              <a href="Product.html" style="color: #1C2733; text-decoration: none; font-size: 14px">角浪 · L1</a>
+              <a href="Product.html" style="color: #1C2733; text-decoration: none; font-size: 14px">ROMA 圓浪 · L5 &nbsp;·&nbsp; MINI 小浪 · L8</a>
+              <a href="Category.html" style="color: #0678D0; text-decoration: none; font-size: 14px; font-weight: 600">全部 11 種浪型 →</a>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px">
+              <a href="Category.html" style="font-weight: 700; color: #0E4176; text-decoration: none; font-size: 14px">PC 天窗採光板</a>
+              <a href="Product.html" style="color: #1C2733; text-decoration: none; font-size: 14px">AJONIT · L20</a>
+              <a href="Product.html" style="color: #1C2733; text-decoration: none; font-size: 14px">高剛性 · L28</a>
+              <a href="Product.html" style="color: #1C2733; text-decoration: none; font-size: 14px">TRIMDEK · L56</a>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px">
+              <a href="Application.html" style="font-weight: 700; color: #0E4176; text-decoration: none; font-size: 14px">UV-PC 隔熱擴散板</a>
+              <a href="Category.html" style="color: #1C2733; text-decoration: none; font-size: 14px">浪型對照查詢</a>
+              <a href="Category.html" style="color: #1C2733; text-decoration: none; font-size: 14px">顏色與透光率</a>
+              <a href="Contact.html" style="color: #1C2733; text-decoration: none; font-size: 14px">客製浪型開發</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item" style="position: relative">
+          <a href="Application.html" style="display: inline-flex; align-items: center; gap: 6px; padding: 12px 14px; color: #1C2733; font-weight: 600; font-size: 15px; text-decoration: none; border-radius: 8px">應用
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+          <div class="dd" style="display: none; position: absolute; top: 100%; left: 0; z-index: 20; background: #FFFFFF; border: 1px solid #D9E1EC; border-radius: 12px; box-shadow: 0 16px 40px rgba(14,65,118,.14); padding: 20px; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; width: 480px">
+            <div style="display: flex; flex-direction: column; gap: 8px">
+              <a href="Application.html" style="font-weight: 700; color: #0E4176; text-decoration: none; font-size: 14px">溫室與農業</a>
+              <a href="Application.html" style="color: #1C2733; text-decoration: none; font-size: 14px">溫室、育苗場</a>
+              <a href="Application.html" style="color: #1C2733; text-decoration: none; font-size: 14px">畜舍、禽舍</a>
+              <a href="Application.html" style="color: #1C2733; text-decoration: none; font-size: 14px">養殖場、堆肥場</a>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px">
+              <a href="Application.html" style="font-weight: 700; color: #0E4176; text-decoration: none; font-size: 14px">建築與營建</a>
+              <a href="Application.html" style="color: #1C2733; text-decoration: none; font-size: 14px">廠房屋頂與天窗採光</a>
+              <a href="Application.html" style="color: #1C2733; text-decoration: none; font-size: 14px">公共設施、雨遮、走廊</a>
+              <a href="Application.html" style="color: #1C2733; text-decoration: none; font-size: 14px">庭院涼棚、車棚（DIY）</a>
+            </div>
+          </div>
+        </div>
+        <a href="Category.html" style="padding: 12px 14px; color: #1C2733; font-weight: 600; font-size: 15px; text-decoration: none; border-radius: 8px">浪型查詢</a>
+        <a href="Article.html" style="padding: 12px 14px; color: #1C2733; font-weight: 600; font-size: 15px; text-decoration: none; border-radius: 8px">案例與知識</a>
+        <a href="#" style="padding: 12px 14px; color: #1C2733; font-weight: 600; font-size: 15px; text-decoration: none; border-radius: 8px">下載</a>
+        <a href="#" style="padding: 12px 14px; color: #1C2733; font-weight: 600; font-size: 15px; text-decoration: none; border-radius: 8px">關於立洋</a>
+      </nav>
+      <div style="display: flex; align-items: center; gap: 12px">
+        <a href="Contact.html" class="nav-cta" style="display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 20px; border-radius: 8px; background: #0E4176; color: #FFFFFF; font-weight: 700; font-size: 15px; text-decoration: none">索取報價</a>
+        <button type="button" class="nav-burger" aria-label="開啟選單" style="display: none; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid #D9E1EC; border-radius: 8px; background: #FFFFFF; color: #0E4176; cursor: pointer">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- 產品主區 -->
+<section style="border-bottom: 1px solid #D9E1EC">
+  <div class="wrap" style="padding-top: 24px; padding-bottom: 40px; display: flex; flex-direction: column; gap: 24px">
+    <nav aria-label="麵包屑" style="font-size: 13px; color: #5B6B7C; display: flex; gap: 8px; flex-wrap: wrap"><a href="Main.html" style="text-decoration: none">首頁</a><span>/</span><a href="Category.html" style="text-decoration: none">產品</a><span>/</span><a href="Category.html" style="text-decoration: none">PC 採光浪板</a><span>/</span><span style="color: #1C2733">GRECA 方浪 · L4</span></nav>
+    <div class="split" style="align-items: center">
+      <div class="card" style="padding: 32px; display: flex; flex-direction: column; gap: 16px; background: #F3F6FA">
+        <img src="assets/pd_L4.jpg" alt="GRECA 方浪 PC 採光浪板，透明" style="width: 100%; height: 340px; object-fit: contain">
+        <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px">
+          <img src="assets/pd_L4.jpg" alt="GRECA 板材示意圖" style="width: 100%; height: 70px; object-fit: contain; background: #FFFFFF; border: 2px solid #0678D0; border-radius: 8px; padding: 6px">
+          <img src="assets/A01_S.jpg" alt="溫室上的 GRECA 浪板" style="width: 100%; height: 70px; object-fit: cover; border: 1px solid #D9E1EC; border-radius: 8px">
+          <img src="assets/A01_0n4suxaje13pu3pvczru.jpg" alt="溫室走道" style="width: 100%; height: 70px; object-fit: cover; border: 1px solid #D9E1EC; border-radius: 8px">
+          <img src="assets/3dUV.jpg" alt="UV 層剖面圖" style="width: 100%; height: 70px; object-fit: contain; background: #FFFFFF; border: 1px solid #D9E1EC; border-radius: 8px; padding: 6px">
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 18px">
+        <span class="tag" style="background: #EAF5D6; color: #3E6A05; width: fit-content">熱銷 · 溫室與農業</span>
+        <h1 style="font-size: 36px; font-weight: 900">GRECA 方浪 PC 採光浪板 <span style="color: #0678D0">L4</span></h1>
+        <p class="muted" style="font-size: 16px; line-height: 1.7">浪距 76 mm 的方浪浪型，可順著拱形溫室骨架彎曲，也能搭配常見的 GRECA 金屬外牆板。共擠 UV 層、SABIC / 奇美全新料，透明板透光率最高 91.7%。</p>
+        <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px">
+          <div style="padding: 12px; border: 1px solid #D9E1EC; border-radius: 10px; display: flex; flex-direction: column; gap: 2px"><span class="muted" style="font-size: 12px">浪距</span><span style="font-weight: 800; color: #0E4176; font-size: 18px">76 mm</span><span class="muted" style="font-size: 12px">3.0 英吋</span></div>
+          <div style="padding: 12px; border: 1px solid #D9E1EC; border-radius: 10px; display: flex; flex-direction: column; gap: 2px"><span class="muted" style="font-size: 12px">浪高</span><span style="font-weight: 800; color: #0E4176; font-size: 18px">18 mm</span><span class="muted" style="font-size: 12px">0.71 英吋</span></div>
+          <div style="padding: 12px; border: 1px solid #D9E1EC; border-radius: 10px; display: flex; flex-direction: column; gap: 2px"><span class="muted" style="font-size: 12px">厚度</span><span style="font-weight: 800; color: #0E4176; font-size: 18px">0.7–0.8</span><span class="muted" style="font-size: 12px">mm</span></div>
+          <div style="padding: 12px; border: 1px solid #D9E1EC; border-radius: 10px; display: flex; flex-direction: column; gap: 2px"><span class="muted" style="font-size: 12px">有效寬度</span><span style="font-weight: 800; color: #0E4176; font-size: 18px">988 mm</span><span class="muted" style="font-size: 12px">38.9 英吋</span></div>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap">
+          <a href="#inquiry" class="btn btn-primary" style="min-height: 52px">索取報價</a>
+          <a href="#inquiry" class="btn btn-outline" style="min-height: 52px">索取樣品</a>
+          <a href="#" class="btn" style="color: #0E4176; min-height: 52px; padding: 0 12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>浪型圖面（PDF）</a>
+        </div>
+        <div style="display: flex; gap: 20px; flex-wrap: wrap; font-size: 13px; color: #5B6B7C; padding-top: 4px">
+          <span>✓ 10 年產品壽命</span><span>✓ 紫外線穿透率 ≤ 2.4%</span><span>✓ 依長度裁切</span><span>✓ 2 個工作天內回覆</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 浪型切換（保留現站） -->
+<section style="background: #F3F6FA; border-bottom: 1px solid #D9E1EC">
+  <div class="wrap" style="padding-top: 18px; padding-bottom: 18px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap">
+    <span style="font-size: 13px; font-weight: 700; color: #0E4176; white-space: nowrap">切換浪型</span>
+    <div style="display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px">
+      <a href="Product.html" class="prof"><img src="assets/spec01.jpg" alt="" aria-hidden="true" style="width: 68px; height: 22px; object-fit: contain">L1</a>
+      <a href="Product.html" class="prof on" aria-current="page"><img src="assets/spec02.jpg" alt="" aria-hidden="true" style="width: 68px; height: 22px; object-fit: contain">L4</a>
+      <a href="Product.html" class="prof"><span style="width: 68px; height: 22px; display: block; border-bottom: 2px dotted #C5D0DD"></span>L5</a>
+      <a href="Product.html" class="prof"><span style="width: 68px; height: 22px; display: block; border-bottom: 2px dotted #C5D0DD"></span>L8</a>
+      <a href="Product.html" class="prof"><span style="width: 68px; height: 22px; display: block; border-bottom: 2px dotted #C5D0DD"></span>L16</a>
+      <a href="Product.html" class="prof"><span style="width: 68px; height: 22px; display: block; border-bottom: 2px dotted #C5D0DD"></span>L17</a>
+      <a href="Product.html" class="prof"><img src="assets/spec07.jpg" alt="" aria-hidden="true" style="width: 68px; height: 22px; object-fit: contain">L20</a>
+      <a href="Product.html" class="prof"><span style="width: 68px; height: 22px; display: block; border-bottom: 2px dotted #C5D0DD"></span>L23</a>
+      <a href="Product.html" class="prof"><span style="width: 68px; height: 22px; display: block; border-bottom: 2px dotted #C5D0DD"></span>L28</a>
+      <a href="Product.html" class="prof"><span style="width: 68px; height: 22px; display: block; border-bottom: 2px dotted #C5D0DD"></span>L46</a>
+      <a href="Product.html" class="prof"><span style="width: 68px; height: 22px; display: block; border-bottom: 2px dotted #C5D0DD"></span>L56</a>
+    </div>
+    <a href="Contact.html" style="margin-left: auto; font-size: 14px; font-weight: 700; text-decoration: none; white-space: nowrap">其他浪型？客製開發 →</a>
+  </div>
+</section>
+
+<!-- 分頁 -->
+<section>
+  <div class="wrap" style="padding-top: 8px">
+    <nav class="tabs" aria-label="產品分區">
+      <a href="#overview" class="on">產品介紹</a><a href="#specs">規格</a><a href="#colors">顏色與透光率</a><a href="#uv">UV 保護</a><a href="#uses">應用</a><a href="#faq">常見問題</a><a href="#downloads">下載</a><a href="#inquiry">詢價</a>
+    </nav>
+  </div>
+</section>
+
+<!-- 產品介紹 -->
+<section id="overview" style="padding: 56px 0">
+  <div class="wrap split">
+    <div style="display: flex; flex-direction: column; gap: 18px">
+      <span class="eyebrow">產品介紹</span>
+      <h2 style="font-size: 30px; font-weight: 900">為什麼溫室業者與屋頂工程常指定 GRECA L4</h2>
+      <p style="font-size: 16px; line-height: 1.8">PC 採光浪板是高分子材料，耐衝擊、透明、透光性佳。GRECA 方浪在小浪距下仍有足夠剛性，所以 L4 可以順著隧道式與拱形骨架彎曲；當作採光帶時也能平貼在 GRECA 型金屬外牆板上。</p>
+      <div class="g c2" style="gap: 14px">
+        <div style="display: flex; gap: 12px; align-items: flex-start"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#90C513" stroke-width="3" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span style="font-size: 15px; line-height: 1.6"><strong>幾乎打不破</strong> — 耐冰雹、強風與大雨</span></div>
+        <div style="display: flex; gap: 12px; align-items: flex-start"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#90C513" stroke-width="3" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span style="font-size: 15px; line-height: 1.6"><strong>透光率最高 92%</strong>（透明板），另有擴散板</span></div>
+        <div style="display: flex; gap: 12px; align-items: flex-start"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#90C513" stroke-width="3" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span style="font-size: 15px; line-height: 1.6"><strong>耐候抗 UV</strong> — 共擠 40 µm UV 保護層</span></div>
+        <div style="display: flex; gap: 12px; align-items: flex-start"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#90C513" stroke-width="3" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span style="font-size: 15px; line-height: 1.6"><strong>使用溫度範圍廣</strong>，難燃等級高</span></div>
+        <div style="display: flex; gap: 12px; align-items: flex-start"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#90C513" stroke-width="3" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span style="font-size: 15px; line-height: 1.6"><strong>重量輕</strong> — 遠輕於玻璃，一般工具即可裁切</span></div>
+        <div style="display: flex; gap: 12px; align-items: flex-start"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#90C513" stroke-width="3" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span style="font-size: 15px; line-height: 1.6"><strong>平面或壓花</strong>表面，14 種標準色</span></div>
+      </div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px">
+      <img src="assets/A01_S.jpg" alt="GRECA PC 浪板溫室" style="grid-column: 1 / -1; width: 100%; height: 260px; object-fit: cover; border-radius: 12px">
+      <img src="assets/A01_0uiez28md9co6wx49779.jpg" alt="倉庫屋頂的 PC 採光帶" style="width: 100%; height: 170px; object-fit: cover; border-radius: 12px">
+      <img src="assets/A01_3utur9cbxyj74htz953p.jpg" alt="透光屋頂下的堆肥場" style="width: 100%; height: 170px; object-fit: cover; border-radius: 12px">
+    </div>
+  </div>
+</section>
+
+<!-- 規格（保留表格＋英制） -->
+<section id="specs" style="padding: 56px 0; background: #F3F6FA">
+  <div class="wrap" style="display: flex; flex-direction: column; gap: 24px">
+    <div style="display: flex; flex-direction: column; gap: 8px"><span class="eyebrow">規格</span><h2 style="font-size: 30px; font-weight: 900">尺寸與公差</h2></div>
+    <div class="card g c2" style="padding: 24px; grid-template-columns: 1fr 1.6fr; gap: 28px; align-items: center">
+      <img src="assets/spec02.jpg" alt="L4 斷面圖：浪距 76 mm、浪高 18 mm、總寬 1,050 mm" style="width: 100%; height: 120px; object-fit: contain">
+      <div style="overflow-x: auto"><table class="spec">
+        <thead><tr><th>型號</th><th>厚度</th><th>浪距</th><th>浪高</th><th>總寬度</th><th>有效寬度</th><th>長度</th></tr></thead>
+        <tbody>
+          <tr><td><strong>L4 GRECA</strong></td><td>0.7–0.8 mm<br><span class="muted">0.028–0.031"</span></td><td>76 mm<br><span class="muted">3.0"</span></td><td>18 mm<br><span class="muted">0.71"</span></td><td>可客製，最大 1,050 mm<br><span class="muted">41.3"</span></td><td>988 mm<br><span class="muted">38.9"</span></td><td>依訂單裁切<br><span class="muted">［最大長度待確認］</span></td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div class="g c3">
+      <div class="card" style="padding: 20px; display: flex; flex-direction: column; gap: 6px"><span class="muted" style="font-size: 13px">重量</span><span style="font-weight: 800; color: #0E4176; font-size: 20px">［待確認］kg/m²</span><span class="muted" style="font-size: 13px">依厚度</span></div>
+      <div class="card" style="padding: 20px; display: flex; flex-direction: column; gap: 6px"><span class="muted" style="font-size: 13px">建議桁條間距</span><span style="font-weight: 800; color: #0E4176; font-size: 20px">［待確認］mm</span><span class="muted" style="font-size: 13px">依載重與厚度</span></div>
+      <div class="card" style="padding: 20px; display: flex; flex-direction: column; gap: 6px"><span class="muted" style="font-size: 13px">最小彎曲半徑</span><span style="font-weight: 800; color: #0E4176; font-size: 20px">［待確認］m</span><span class="muted" style="font-size: 13px">橫向於浪紋</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 顏色與透光率（保留現站表格） -->
+<section id="colors" style="padding: 56px 0">
+  <div class="wrap" style="display: flex; flex-direction: column; gap: 24px">
+    <div style="display: flex; flex-direction: column; gap: 8px; max-width: 760px"><span class="eyebrow">顏色與透光率</span><h2 style="font-size: 30px; font-weight: 900">依工程需要的光線選顏色</h2><p class="muted" style="font-size: 15px; line-height: 1.7">以 0.8 mm 板材依 ASTM D1003 量測。擴散板與乳白色會把光線散開（擴散率高、霧度高），最適合作物；透明與色板保留直射光。</p></div>
+    <div style="display: flex; gap: 10px; flex-wrap: wrap">
+      <span style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border: 2px solid #0678D0; border-radius: 999px; font-size: 13px; font-weight: 700; color: #0E4176"><span style="width: 18px; height: 18px; border-radius: 50%; background: #EAF2F8; border: 1px solid #C5D0DD"></span>透明 CL001</span>
+      <span style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border: 1px solid #D9E1EC; border-radius: 999px; font-size: 13px; font-weight: 600"><span style="width: 18px; height: 18px; border-radius: 50%; background: #F5F5F2; border: 1px solid #C5D0DD"></span>擴散白 WD001</span>
+      <span style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border: 1px solid #D9E1EC; border-radius: 999px; font-size: 13px; font-weight: 600"><span style="width: 18px; height: 18px; border-radius: 50%; background: #6B4A2B"></span>茶色 BZ001–003</span>
+      <span style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border: 1px solid #D9E1EC; border-radius: 999px; font-size: 13px; font-weight: 600"><span style="width: 18px; height: 18px; border-radius: 50%; background: #8A8F94"></span>灰色 GE001–003</span>
+      <span style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border: 1px solid #D9E1EC; border-radius: 999px; font-size: 13px; font-weight: 600"><span style="width: 18px; height: 18px; border-radius: 50%; background: #F2F0E6; border: 1px solid #C5D0DD"></span>乳白 OP001</span>
+      <span style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border: 1px solid #D9E1EC; border-radius: 999px; font-size: 13px; font-weight: 600"><span style="width: 18px; height: 18px; border-radius: 50%; background: #4F8F5A"></span>綠色 GR001</span>
+      <span style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border: 1px solid #D9E1EC; border-radius: 999px; font-size: 13px; font-weight: 600"><span style="width: 18px; height: 18px; border-radius: 50%; background: #2E6DB4"></span>藍色 BL001</span>
+      <span style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border: 1px solid #D9E1EC; border-radius: 999px; font-size: 13px; font-weight: 600"><span style="width: 18px; height: 18px; border-radius: 50%; background: #E9E4D6; border: 1px solid #C5D0DD"></span>珍珠白 PR001</span>
+      <span style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border: 1px solid #D9E1EC; border-radius: 999px; font-size: 13px; font-weight: 600"><span style="width: 18px; height: 18px; border-radius: 50%; background: #B9BEC3"></span>銀色 SL001</span>
+      <span style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border: 1px solid #D9E1EC; border-radius: 999px; font-size: 13px; font-weight: 600"><span style="width: 18px; height: 18px; border-radius: 50%; background: #EFE3C2; border: 1px solid #C5D0DD"></span>米色 CM001</span>
+      <span style="display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px; border: 1px solid #D9E1EC; border-radius: 999px; font-size: 13px; font-weight: 600"><span style="width: 18px; height: 18px; border-radius: 50%; background: #7A2634"></span>酒紅 CT001</span>
+    </div>
+    <div class="card" style="overflow-x: auto"><table class="spec">
+      <thead><tr><th>顏色</th><th>色號</th><th>透光率</th><th>擴散率</th><th>平行光透光率</th><th>霧度</th><th>適合用途</th></tr></thead>
+      <tbody>
+        <tr><td>透明</td><td>CL001</td><td><strong>91.67%</strong></td><td>0.74%</td><td>88.93%</td><td>0.83%</td><td>畜舍、天窗、一般屋頂</td></tr>
+        <tr><td>擴散白</td><td>WD001</td><td><strong>89.01%</strong></td><td>72.89%</td><td>0.68%</td><td>97.92%</td><td>蔬菜、蘭花、育苗</td></tr>
+        <tr><td>透明 / 壓花</td><td>CL001</td><td>89.66%</td><td>—</td><td>—</td><td>84.11%</td><td>要採光又要隱私</td></tr>
+        <tr><td>綠色</td><td>GR001</td><td>53.61%</td><td>2.19%</td><td>51.43%</td><td>4.08%</td><td>園藝構造物</td></tr>
+        <tr><td>乳白</td><td>OP001</td><td>44.17%</td><td>43.86%</td><td>0.30%</td><td>99.32%</td><td>遮蔭栽培、雨遮</td></tr>
+        <tr><td>灰色</td><td>GE001</td><td>40.29%</td><td>1.41%</td><td>38.89%</td><td>3.49%</td><td>庭院、車棚</td></tr>
+        <tr><td>茶色</td><td>BZ002</td><td>37.75%</td><td>1.11%</td><td>36.64%</td><td>2.94%</td><td>庭院、車棚</td></tr>
+        <tr><td>茶色</td><td>BZ001</td><td>36.69%</td><td>1.41%</td><td>35.28%</td><td>3.85%</td><td>庭院、車棚</td></tr>
+        <tr><td>米色</td><td>CM001</td><td>30.69%</td><td>30.46%</td><td>0.23%</td><td>99.25%</td><td>柔和遮蔭</td></tr>
+        <tr><td>珍珠白</td><td>PR001</td><td>25.55%</td><td>25.27%</td><td>0.28%</td><td>98.92%</td><td>柔和遮蔭</td></tr>
+        <tr><td>藍色</td><td>BL001</td><td>25.20%</td><td>2.17%</td><td>23.03%</td><td>8.61%</td><td>泳池、裝飾</td></tr>
+        <tr><td>灰色</td><td>GE003</td><td>19.98%</td><td>0.66%</td><td>19.31%</td><td>3.32%</td><td>重度遮蔭</td></tr>
+        <tr><td>灰色</td><td>GE002</td><td>13.94%</td><td>0.12%</td><td>13.81%</td><td>0.89%</td><td>重度遮蔭</td></tr>
+        <tr><td>銀色</td><td>SL001</td><td>13.65%</td><td>11.01%</td><td>2.64%</td><td>80.68%</td><td>怕熱的空間</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
+<!-- UV（保留剖面圖） -->
+<section id="uv" style="padding: 56px 0; background: #F3F6FA">
+  <div class="wrap split" style="align-items: center">
+    <img src="assets/3dUV.jpg" alt="剖面圖：0.04 mm UV 吸收層共擠在 PC 板表面" style="width: 100%; height: 320px; object-fit: contain; background: #FFFFFF; border: 1px solid #D9E1EC; border-radius: 12px; padding: 20px">
+    <div style="display: flex; flex-direction: column; gap: 14px">
+      <span class="eyebrow">UV 保護</span>
+      <h2 style="font-size: 30px; font-weight: 900">40 µm UV 層是共擠成型，不是事後塗上去</h2>
+      <p style="font-size: 16px; line-height: 1.8">高密度 UV 吸收劑以 0.04 mm 的厚度，透過共擠製程均勻覆蓋在板材表面。它讓板材在 290–400 nm 波段不黃變，300 nm 的紫外線穿透率低於 2.4% — 板材保持清透，也擋掉對人、植物與室內有害的紫外線。</p>
+      <div class="g c3" style="gap: 12px">
+        <div class="card" style="padding: 14px; display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 800; color: #0E4176; font-size: 20px">≤ 2.4%</span><span class="muted" style="font-size: 12px">紫外線穿透率</span></div>
+        <div class="card" style="padding: 14px; display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 800; color: #0E4176; font-size: 20px">≤ 3 / ≤ 10</span><span class="muted" style="font-size: 12px">黃變指數：出廠 / 5 年（ASTM D1925）</span></div>
+        <div class="card" style="padding: 14px; display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 800; color: #0E4176; font-size: 20px">72 小時 QUV</span><span class="muted" style="font-size: 12px">每批加速耐候測試</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 本型號的應用 -->
+<section id="uses" style="padding: 56px 0">
+  <div class="wrap" style="display: flex; flex-direction: column; gap: 24px">
+    <div style="display: flex; flex-direction: column; gap: 8px"><span class="eyebrow">應用</span><h2 style="font-size: 30px; font-weight: 900">L4 用在哪裡</h2></div>
+    <div class="g c4">
+      <a href="Application.html" class="card" style="text-decoration: none; color: inherit; display: flex; flex-direction: column"><img src="assets/A01_S.jpg" alt="" aria-hidden="true" style="width: 100%; height: 150px; object-fit: cover"><div style="padding: 14px 16px; display: flex; flex-direction: column; gap: 4px"><span style="font-weight: 700; color: #0E4176">溫室與蘭園</span><span class="muted" style="font-size: 13px">建議擴散白 WD001</span></div></a>
+      <a href="Application.html" class="card" style="text-decoration: none; color: inherit; display: flex; flex-direction: column"><img src="assets/A01_12zy55bs7c3zj0btnm9j.jpg" alt="" aria-hidden="true" style="width: 100%; height: 150px; object-fit: cover"><div style="padding: 14px 16px; display: flex; flex-direction: column; gap: 4px"><span style="font-weight: 700; color: #0E4176">畜舍與禽舍</span><span class="muted" style="font-size: 13px">透明或乳白</span></div></a>
+      <a href="Application.html" class="card" style="text-decoration: none; color: inherit; display: flex; flex-direction: column"><img src="assets/A06_S.jpg" alt="" aria-hidden="true" style="width: 100%; height: 150px; object-fit: cover"><div style="padding: 14px 16px; display: flex; flex-direction: column; gap: 4px"><span style="font-weight: 700; color: #0E4176">車棚、涼棚與儲藏室</span><span class="muted" style="font-size: 13px">茶色或灰色</span></div></a>
+      <a href="Application.html" class="card" style="text-decoration: none; color: inherit; display: flex; flex-direction: column"><img src="assets/A04_S.jpg" alt="" aria-hidden="true" style="width: 100%; height: 150px; object-fit: cover"><div style="padding: 14px 16px; display: flex; flex-direction: column; gap: 4px"><span style="font-weight: 700; color: #0E4176">GRECA 金屬板上的採光帶</span><span class="muted" style="font-size: 13px">透明，0.8 mm</span></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- 常見問題＋下載 -->
+<section style="padding: 56px 0; background: #F3F6FA">
+  <div class="wrap split">
+    <div id="faq" class="faq" style="display: flex; flex-direction: column">
+      <span class="eyebrow" style="margin-bottom: 8px">常見問題 · GRECA L4</span>
+      <h2 style="font-size: 28px; font-weight: 900; margin-bottom: 8px">買家常問 L4 的問題</h2>
+      <details open><summary>L4 可以彎在拱形溫室骨架上嗎？<span aria-hidden="true">+</span></summary><p>可以。浪板可橫向於浪紋彎曲。更小的彎弧建議用 MINI 小浪（L8）；我們可依您的厚度確認最小彎曲半徑。</p></details>
+      <details><summary>該訂 0.7 還是 0.8 mm？<span aria-hidden="true">+</span></summary><p>外露屋頂、冰雹與颱風地區、桁條間距較大時用 0.8 mm；側牆與有遮蔽的溫室用 0.7 mm。</p></details>
+      <details><summary>L4 能搭配我現有的 GRECA 金屬外牆板嗎？<span aria-hidden="true">+</span></summary><p>L4 依 76 × 18 mm 的 GRECA 幾何製作。寄一片金屬板樣品或圖面給我們，下單前先確認密合度。</p></details>
+      <details><summary>怎麼固定與防水？<span aria-hidden="true">+</span></summary><p>在浪峰以自攻螺絲加 EPDM 墊圈固定，預鑽放大孔以容許熱脹冷縮。安裝手冊（PDF）說明搭接、端部搭接與防水。</p></details>
+    </div>
+    <div id="downloads" style="display: flex; flex-direction: column; gap: 12px">
+      <span class="eyebrow">下載</span>
+      <h2 style="font-size: 28px; font-weight: 900; margin-bottom: 8px">L4 相關文件</h2>
+      <a href="#" class="card" style="display: flex; align-items: center; gap: 14px; padding: 16px 18px; text-decoration: none; color: inherit"><span style="width: 40px; height: 40px; border-radius: 8px; background: #E3F0FB; display: flex; align-items: center; justify-content: center; color: #0E4176; font-weight: 800; font-size: 11px">PDF</span><span style="display: flex; flex-direction: column"><span style="font-weight: 700; color: #0E4176">L4 浪型圖面</span><span class="muted" style="font-size: 13px">公制與英制尺寸</span></span></a>
+      <a href="#" class="card" style="display: flex; align-items: center; gap: 14px; padding: 16px 18px; text-decoration: none; color: inherit"><span style="width: 40px; height: 40px; border-radius: 8px; background: #E3F0FB; display: flex; align-items: center; justify-content: center; color: #0E4176; font-weight: 800; font-size: 11px">PDF</span><span style="display: flex; flex-direction: column"><span style="font-weight: 700; color: #0E4176">技術規格書</span><span class="muted" style="font-size: 13px">透光、UV、熱性能與耐衝擊數據</span></span></a>
+      <a href="#" class="card" style="display: flex; align-items: center; gap: 14px; padding: 16px 18px; text-decoration: none; color: inherit"><span style="width: 40px; height: 40px; border-radius: 8px; background: #E3F0FB; display: flex; align-items: center; justify-content: center; color: #0E4176; font-weight: 800; font-size: 11px">PDF</span><span style="display: flex; flex-direction: column"><span style="font-weight: 700; color: #0E4176">安裝手冊</span><span class="muted" style="font-size: 13px">固定、搭接、防水、儲存</span></span></a>
+      <a href="#" class="card" style="display: flex; align-items: center; gap: 14px; padding: 16px 18px; text-decoration: none; color: inherit"><span style="width: 40px; height: 40px; border-radius: 8px; background: #E3F0FB; display: flex; align-items: center; justify-content: center; color: #0E4176; font-weight: 800; font-size: 11px">PDF</span><span style="display: flex; flex-direction: column"><span style="font-weight: 700; color: #0E4176">保固與品質聲明</span><span class="muted" style="font-size: 13px">10 年產品壽命［條款待確認］</span></span></a>
+      <a href="#" class="card" style="display: flex; align-items: center; gap: 14px; padding: 16px 18px; text-decoration: none; color: inherit"><span style="width: 40px; height: 40px; border-radius: 8px; background: #E3F0FB; display: flex; align-items: center; justify-content: center; color: #0E4176; font-weight: 800; font-size: 11px">PDF</span><span style="display: flex; flex-direction: column"><span style="font-weight: 700; color: #0E4176">完整產品型錄</span><span class="muted" style="font-size: 13px">全部 11 種標準浪型</span></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 詢價（保留，精簡到 5 欄） -->
+<section id="inquiry" style="padding: 64px 0">
+  <div class="wrap g c2" style="grid-template-columns: 1fr 1.3fr; gap: 48px; align-items: start">
+    <div style="display: flex; flex-direction: column; gap: 14px">
+      <span class="eyebrow">詢價</span>
+      <h2 style="font-size: 30px; font-weight: 900">取得 GRECA L4 報價</h2>
+      <p class="muted" style="font-size: 15px; line-height: 1.7">告訴我們數量、顏色與長度，2 個工作天內回覆價格、交期與從台南出貨的方式。</p>
+      <div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px; color: #1C2733; padding-top: 6px">
+        <span><strong>電話</strong> +886-6-578-4093 / 578-3360</span>
+        <span><strong>Email</strong> sales@lyon.com.tw</span>
+        <span><strong>WhatsApp / LINE</strong> ［待確認］</span>
+        <span><strong>聯絡人</strong> 陳先生 Mr. Henry Chen</span>
+      </div>
+    </div>
+    <form class="card" style="padding: 28px; display: flex; flex-direction: column; gap: 16px" action="#">
+      <input type="hidden" name="product" value="GRECA L4">
+      <div class="g c2" style="gap: 16px">
+        <div><label class="f" for="q-name">姓名 *</label><input id="q-name" type="text" required></div>
+        <div><label class="f" for="q-company">公司 *</label><input id="q-company" type="text" required></div>
+        <div><label class="f" for="q-email">E-mail *</label><input id="q-email" type="email" required></div>
+        <div><label class="f" for="q-country">國家 / 地區 *</label><select id="q-country" required><option>台灣</option><option>美國</option><option>日本</option><option>澳洲</option><option>其他</option></select></div>
+      </div>
+      <div><label class="f" for="q-msg">數量、顏色、長度與用途 *</label><textarea id="q-msg" rows="4" required placeholder="例：400 片、透明、0.8 mm、3.6 m，溫室屋頂"></textarea></div>
+      <div style="display: flex; gap: 20px; flex-wrap: wrap">
+        <label style="display: flex; gap: 10px; align-items: center; font-size: 14px; font-weight: 500"><input type="checkbox" style="width: 18px; height: 18px">寄樣品裁片給我［待確認］</label>
+        <label style="display: flex; gap: 10px; align-items: center; font-size: 14px; font-weight: 500"><input type="checkbox" style="width: 18px; height: 18px">我是經銷商 / OEM</label>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width: 100%; min-height: 52px">送出詢價</button>
+      <p class="muted" style="font-size: 12px; line-height: 1.6">您的資料只用於回覆這次詢問，不會主動寄送電子報。</p>
+    </form>
+  </div>
+</section>
+
+<footer style="font-family: Inter, 'Noto Sans TC', 'Microsoft JhengHei', system-ui, sans-serif; background: #0E4176; color: #FFFFFF; box-sizing: border-box">
+  <div style="max-width: 1240px; margin: 0 auto; padding: 56px 32px 28px; box-sizing: border-box">
+    <div class="foot-grid" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 40px">
+      <div style="display: flex; flex-direction: column; gap: 16px">
+        <div style="background: #FFFFFF; border-radius: 8px; padding: 10px 14px; width: fit-content">
+          <img src="assets/logo.jpg" alt="立洋塑膠有限公司" style="height: 40px; width: auto; display: block">
+        </div>
+        <p style="margin: 0; font-size: 14px; line-height: 1.7; color: rgba(255,255,255,.85)">立洋塑膠創立於 1994 年，是專業的 PC 採光浪板製造商，產品銷售超過 30 個國家。63 種浪型、全面共擠 UV 保護層、年產能 3,600 公噸。</p>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap">
+          <span style="font-size: 12px; font-weight: 700; padding: 5px 10px; border-radius: 999px; background: rgba(255,255,255,.12); color: #FFFFFF">10 年產品壽命</span>
+          <span style="font-size: 12px; font-weight: 700; padding: 5px 10px; border-radius: 999px; background: rgba(255,255,255,.12); color: #FFFFFF">QUV 耐候測試</span>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <h3 style="margin: 0 0 6px; font-size: 14px; letter-spacing: .1em; color: #FEE100">產品</h3>
+        <a href="Category.html" style="color: #FFFFFF; text-decoration: none; font-size: 14px">PC 採光浪板</a>
+        <a href="Category.html" style="color: #FFFFFF; text-decoration: none; font-size: 14px">PC 天窗採光板</a>
+        <a href="Application.html" style="color: #FFFFFF; text-decoration: none; font-size: 14px">UV-PC 隔熱擴散板</a>
+        <a href="Category.html" style="color: #FFFFFF; text-decoration: none; font-size: 14px">浪型對照查詢</a>
+        <a href="Contact.html" style="color: #FFFFFF; text-decoration: none; font-size: 14px">客製浪型開發</a>
+        <a href="#" style="color: #FFFFFF; text-decoration: none; font-size: 14px">型錄與文件下載</a>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <h3 style="margin: 0 0 6px; font-size: 14px; letter-spacing: .1em; color: #FEE100">應用</h3>
+        <a href="Application.html" style="color: #FFFFFF; text-decoration: none; font-size: 14px">溫室與農業</a>
+        <a href="Application.html" style="color: #FFFFFF; text-decoration: none; font-size: 14px">廠房屋頂與天窗採光</a>
+        <a href="Application.html" style="color: #FFFFFF; text-decoration: none; font-size: 14px">建築與公共設施</a>
+        <a href="Application.html" style="color: #FFFFFF; text-decoration: none; font-size: 14px">庭院涼棚、車棚與 DIY</a>
+        <a href="Article.html" style="color: #FFFFFF; text-decoration: none; font-size: 14px">工程案例</a>
+        <a href="Article.html" style="color: #FFFFFF; text-decoration: none; font-size: 14px">知識文章與選購指南</a>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <h3 style="margin: 0 0 6px; font-size: 14px; letter-spacing: .1em; color: #FEE100">聯絡我們</h3>
+        <p style="margin: 0; font-size: 14px; line-height: 1.7; color: rgba(255,255,255,.9)">743 台南市山上區明和里興旺路 438 號</p>
+        <a href="#" style="color: #FFFFFF; text-decoration: none; font-size: 14px">電話 +886-6-578-4093 / 578-3360</a>
+        <a href="#" style="color: #FFFFFF; text-decoration: none; font-size: 14px">傳真 +886-6-578-4365</a>
+        <a href="#" style="color: #FFFFFF; text-decoration: none; font-size: 14px">sales@lyon.com.tw</a>
+        <a href="#" style="color: #FFFFFF; text-decoration: none; font-size: 14px">WhatsApp / LINE［待確認］</a>
+        <a href="Contact.html" style="display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 18px; border-radius: 8px; background: #FFFFFF; color: #0E4176; font-weight: 700; font-size: 14px; text-decoration: none; width: fit-content; margin-top: 6px">索取報價</a>
+      </div>
+    </div>
+    <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.2); display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; font-size: 13px; color: rgba(255,255,255,.75)">
+      <span>© 2026 立洋塑膠有限公司 LYON PLASTIC CO., LTD. 版權所有</span>
+      <div style="display: flex; gap: 18px; flex-wrap: wrap">
+        <a href="#" style="color: rgba(255,255,255,.85); text-decoration: none">隱私權政策</a>
+        <a href="#" style="color: rgba(255,255,255,.85); text-decoration: none">網站地圖</a>
+        <a href="#" style="color: rgba(255,255,255,.85); text-decoration: none">English</a>
+        <a href="#" style="color: #FFFFFF; font-weight: 700; text-decoration: none">繁體中文</a>
+        <a href="#" style="color: rgba(255,255,255,.85); text-decoration: none">Español</a>
+      </div>
+    </div>
+  </div>
+</footer>
+</div></body></html>

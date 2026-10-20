@@ -1,0 +1,351 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>應用頁 溫室與農業 設計稿</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Noto+Sans+TC:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:Inter,'Noto Sans TC','Microsoft JhengHei',system-ui,sans-serif;color:#1C2733;background:#FFFFFF}
+*{box-sizing:border-box}
+a{color:#0678D0}a:hover{color:#0E4176}
+h1,h2,h3,h4{margin:0;color:#0E4176;letter-spacing:.01em;line-height:1.3}
+p{margin:0}
+.wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 22px;border-radius:8px;font-weight:700;font-size:15px;text-decoration:none;border:2px solid transparent;cursor:pointer;font-family:inherit;line-height:1}
+.btn-primary{background:#0E4176;color:#FFFFFF}.btn-primary:hover{background:#0A315A;color:#FFFFFF}
+.btn-blue{background:#0678D0;color:#FFFFFF}.btn-blue:hover{background:#0563AD;color:#FFFFFF}
+.btn-outline{border-color:#0E4176;color:#0E4176;background:#FFFFFF}.btn-outline:hover{background:#EEF3F9;color:#0E4176}
+.btn-ghost{border-color:rgba(255,255,255,.75);color:#FFFFFF;background:transparent}.btn-ghost:hover{background:rgba(255,255,255,.12);color:#FFFFFF}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.12em;color:#0678D0}
+.muted{color:#5B6B7C}
+.card{background:#FFFFFF;border:1px solid #D9E1EC;border-radius:12px;overflow:hidden}
+.tag{display:inline-block;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px}
+.g{display:grid;gap:24px}
+.c2{grid-template-columns:repeat(2,minmax(0,1fr))}.c3{grid-template-columns:repeat(3,minmax(0,1fr))}.c4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.split{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px;align-items:start}
+table.spec{width:100%;border-collapse:collapse;font-size:14px}
+table.spec th{background:#0E4176;color:#FFFFFF;text-align:left;padding:10px 12px;font-weight:600}
+table.spec td{padding:10px 12px;border-bottom:1px solid #E3E9F1;vertical-align:top;line-height:1.6}
+table.spec tbody tr:nth-child(even) td{background:#F7F9FC}
+.nav-item .dd{display:none}.nav-item:hover .dd{display:grid}
+.faq summary{cursor:pointer;font-weight:700;color:#0E4176;font-size:16px;padding:16px 0;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq details{border-bottom:1px solid #D9E1EC}.faq p{padding-bottom:16px;line-height:1.7;color:#5B6B7C;font-size:15px}
+input,select,textarea{font-family:inherit;font-size:15px;padding:12px 14px;border:1px solid #C5D0DD;border-radius:8px;width:100%;background:#FFFFFF;color:#1C2733}
+label.f{font-size:13px;font-weight:700;display:block;margin-bottom:6px}
+.sub{display:flex;flex-direction:column;gap:6px;padding:16px 18px;border:1px solid #D9E1EC;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF}
+@media(max-width:960px){.c3,.c4{grid-template-columns:repeat(2,minmax(0,1fr))}.split{grid-template-columns:1fr;gap:28px}.nav-links,.nav-cta{display:none !important}.nav-burger{display:inline-flex !important}.topbar{display:none}.hero-h{font-size:34px !important}.foot-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}}
+@media(max-width:600px){.c2,.c3,.c4{grid-template-columns:1fr}.wrap{padding:0 16px}.foot-grid{grid-template-columns:1fr !important}}
+</style>
+</head><body><div style="display: flex; flex-direction: column; min-width: 0">
+<header style="font-family: Inter, 'Noto Sans TC', 'Microsoft JhengHei', system-ui, sans-serif; background: #FFFFFF; color: #1C2733; box-sizing: border-box">
+  <div class="topbar" style="background: #0E4176; color: #FFFFFF; font-size: 13px">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 0 32px; min-height: 36px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap">
+      <span style="opacity: .92">1994 年創立 · 台南製造 · PC 採光浪板專業製造商</span>
+      <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap">
+        <a href="#" style="color: #FFFFFF; text-decoration: none">+886-6-578-4093</a>
+        <a href="#" style="color: #FFFFFF; text-decoration: none">sales@lyon.com.tw</a>
+        <span style="display: inline-flex; gap: 10px; align-items: center; padding-left: 16px; border-left: 1px solid rgba(255,255,255,.35)">
+          <a href="#" style="color: #FFFFFF; opacity: .8; text-decoration: none">EN</a>
+          <a href="#" aria-current="page" style="color: #FFFFFF; font-weight: 700; text-decoration: none">繁中</a>
+          <a href="#" style="color: #FFFFFF; opacity: .8; text-decoration: none">ES</a>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div style="border-bottom: 1px solid #D9E1EC">
+    <div style="max-width: 1240px; margin: 0 auto; padding: 0 32px; min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 24px">
+      <a href="Main.html" aria-label="立洋塑膠首頁" style="display: flex; align-items: center; text-decoration: none">
+        <img src="assets/logo.jpg" alt="立洋塑膠有限公司" style="height: 44px; width: auto; display: block">
+      </a>
+      <nav class="nav-links" aria-label="主選單" style="display: flex; align-items: center; gap: 4px">
+        <div class="nav-item" style="position: relative">
+          <a href="Category.html" style="display: inline-flex; align-items: center; gap: 6px; padding: 12px 14px; color: #1C2733; font-weight: 600; font-size: 15px; text-decoration: none; border-radius: 8px">產品
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+          <div class="dd" style="display: none; position: absolute; top: 100%; left: 0; z-index: 20; background: #FFFFFF; border: 1px solid #D9E1EC; border-radius: 12px; box-shadow: 0 16px 40px rgba(14,65,118,.14); padding: 20px; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; width: 720px">
+            <div style="display: flex; flex-direction: column; gap: 8px">
+              <a href="Category.html" style="font-weight: 700; color: #0E4176; text-decoration: none; font-size: 14px">PC 採光浪板</a>
+              <a href="Product.html" style="color: #1C2733; text-decoration: none; font-size: 14px">GRECA 方浪 · L4</a>
+              <a href="Product.html" style="color: #1C2733; text-decoration: none; font-size: 14px">角浪 · L1</a>
+              <a href="Product.html" style="color: #1C2733; text-decoration: none; font-size: 14px">ROMA 圓浪 · L5 &nbsp;·&nbsp; MINI 小浪 · L8</a>
+              <a href="Category.html" style="color: #0678D0; text-decoration: none; font-size: 14px; font-weight: 600">全部 11 種浪型 →</a>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px">
+              <a href="Category.html" style="font-weight: 700; color: #0E4176; text-decoration: none; font-size: 14px">PC 天窗採光板</a>
+              <a href="Product.html" style="color: #1C2733; text-decoration: none; font-size: 14px">AJONIT · L20</a>
+              <a href="Product.html" style="color: #1C2733; text-decoration: none; font-size: 14px">高剛性 · L28</a>
+              <a href="Product.html" style="color: #1C2733; text-decoration: none; font-size: 14px">TRIMDEK · L56</a>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px">
+              <a href="Application.html" style="font-weight: 700; color: #0E4176; text-decoration: none; font-size: 14px">UV-PC 隔熱擴散板</a>
+              <a href="Category.html" style="color: #1C2733; text-decoration: none; font-size: 14px">浪型對照查詢</a>
+              <a href="Category.html" style="color: #1C2733; text-decoration: none; font-size: 14px">顏色與透光率</a>
+              <a href="Contact.html" style="color: #1C2733; text-decoration: none; font-size: 14px">客製浪型開發</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item" style="position: relative">
+          <a href="Application.html" style="display: inline-flex; align-items: center; gap: 6px; padding: 12px 14px; color: #1C2733; font-weight: 600; font-size: 15px; text-decoration: none; border-radius: 8px">應用
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></a>
+          <div class="dd" style="display: none; position: absolute; top: 100%; left: 0; z-index: 20; background: #FFFFFF; border: 1px solid #D9E1EC; border-radius: 12px; box-shadow: 0 16px 40px rgba(14,65,118,.14); padding: 20px; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; width: 480px">
+            <div style="display: flex; flex-direction: column; gap: 8px">
+              <a href="Application.html" style="font-weight: 700; color: #0E4176; text-decoration: none; font-size: 14px">溫室與農業</a>
+              <a href="Application.html" style="color: #1C2733; text-decoration: none; font-size: 14px">溫室、育苗場</a>
+              <a href="Application.html" style="color: #1C2733; text-decoration: none; font-size: 14px">畜舍、禽舍</a>
+              <a href="Application.html" style="color: #1C2733; text-decoration: none; font-size: 14px">養殖場、堆肥場</a>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px">
+              <a href="Application.html" style="font-weight: 700; color: #0E4176; text-decoration: none; font-size: 14px">建築與營建</a>
+              <a href="Application.html" style="color: #1C2733; text-decoration: none; font-size: 14px">廠房屋頂與天窗採光</a>
+              <a href="Application.html" style="color: #1C2733; text-decoration: none; font-size: 14px">公共設施、雨遮、走廊</a>
+              <a href="Application.html" style="color: #1C2733; text-decoration: none; font-size: 14px">庭院涼棚、車棚（DIY）</a>
+            </div>
+          </div>
+        </div>
+        <a href="Category.html" style="padding: 12px 14px; color: #1C2733; font-weight: 600; font-size: 15px; text-decoration: none; border-radius: 8px">浪型查詢</a>
+        <a href="Article.html" style="padding: 12px 14px; color: #1C2733; font-weight: 600; font-size: 15px; text-decoration: none; border-radius: 8px">案例與知識</a>
+        <a href="#" style="padding: 12px 14px; color: #1C2733; font-weight: 600; font-size: 15px; text-decoration: none; border-radius: 8px">下載</a>
+        <a href="#" style="padding: 12px 14px; color: #1C2733; font-weight: 600; font-size: 15px; text-decoration: none; border-radius: 8px">關於立洋</a>
+      </nav>
+      <div style="display: flex; align-items: center; gap: 12px">
+        <a href="Contact.html" class="nav-cta" style="display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 20px; border-radius: 8px; background: #0E4176; color: #FFFFFF; font-weight: 700; font-size: 15px; text-decoration: none">索取報價</a>
+        <button type="button" class="nav-burger" aria-label="開啟選單" style="display: none; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid #D9E1EC; border-radius: 8px; background: #FFFFFF; color: #0E4176; cursor: pointer">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- 主視覺 -->
+<section style="position: relative; background: #0E4176; color: #FFFFFF; overflow: hidden">
+  <img src="assets/A01_S.jpg" alt="PC 浪板溫室" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .5">
+  <div style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(14,65,118,.95) 0%, rgba(14,65,118,.7) 60%, rgba(14,65,118,.3) 100%)"></div>
+  <div class="wrap" style="position: relative; padding-top: 28px; padding-bottom: 72px; display: flex; flex-direction: column; gap: 18px">
+    <nav aria-label="麵包屑" style="font-size: 13px; color: rgba(255,255,255,.8); display: flex; gap: 8px; flex-wrap: wrap"><a href="Main.html" style="color: #FFFFFF; text-decoration: none">首頁</a><span>/</span><a href="Application.html" style="color: #FFFFFF; text-decoration: none">應用</a><span>/</span><span>溫室與農業</span></nav>
+    <span class="eyebrow" style="color: #FEE100; margin-top: 20px">應用 · 農業</span>
+    <h1 class="hero-h" style="color: #FFFFFF; font-size: 44px; font-weight: 900; max-width: 760px">溫室與農業用 PC 採光浪板</h1>
+    <p style="font-size: 18px; line-height: 1.7; max-width: 680px; color: rgba(255,255,255,.92)">一座耐用、高產的溫室，從選對覆蓋材料開始。立洋 PC 採光浪板兼顧自然採光、隔熱與長期耐候 — 蔬菜農場、蘭園、畜舍、養殖場，一季又一季。</p>
+    <div style="display: flex; gap: 14px; flex-wrap: wrap">
+      <a href="#inquiry" class="btn btn-blue" style="min-height: 52px">溫室報價</a>
+      <a href="#profiles" class="btn btn-ghost" style="min-height: 52px">看推薦浪型</a>
+    </div>
+  </div>
+</section>
+
+<!-- 第二層用途（新增） -->
+<section style="background: #F3F6FA; border-bottom: 1px solid #D9E1EC">
+  <div class="wrap" style="padding-top: 24px; padding-bottom: 24px; display: flex; flex-direction: column; gap: 12px">
+    <span class="muted" style="font-size: 13px; font-weight: 700">選擇您的用途</span>
+    <div class="g c4" style="gap: 12px">
+      <a href="Application.html" class="sub" style="border-color: #0678D0; background: #E3F0FB"><span style="font-weight: 700; color: #0E4176">蔬菜與花卉溫室</span><span class="muted" style="font-size: 13px">擴散光線，不燒葉</span></a>
+      <a href="Application.html" class="sub"><span style="font-weight: 700; color: #0E4176">畜舍與禽舍</span><span class="muted" style="font-size: 13px">有自然光，沒有鐵皮的悶熱</span></a>
+      <a href="Application.html" class="sub"><span style="font-weight: 700; color: #0E4176">果園與育苗場雨遮</span><span class="muted" style="font-size: 13px">擋雨，光照適合作物</span></a>
+      <a href="Application.html" class="sub"><span style="font-weight: 700; color: #0E4176">養殖場與堆肥場</span><span class="muted" style="font-size: 13px">防風雨、明亮的工作空間</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 推薦浪型 -->
+<section id="profiles" style="padding: 64px 0">
+  <div class="wrap" style="display: flex; flex-direction: column; gap: 28px">
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap">
+      <div style="display: flex; flex-direction: column; gap: 8px"><span class="eyebrow">推薦浪型</span><h2 style="font-size: 32px; font-weight: 900">三款浪型涵蓋大多數溫室</h2></div>
+      <a href="Category.html" style="font-weight: 700; text-decoration: none">比較全部 11 種浪型 →</a>
+    </div>
+    <div class="g c3">
+      <div class="card" style="display: flex; flex-direction: column">
+        <div style="height: 170px; display: flex; align-items: center; justify-content: center; padding: 16px; background: #F3F6FA"><img src="assets/pd_L4.jpg" alt="GRECA L4" style="max-height: 140px; max-width: 100%; object-fit: contain"></div>
+        <div style="padding: 20px 22px 24px; display: flex; flex-direction: column; gap: 10px; flex: 1">
+          <span class="tag" style="background: #EAF5D6; color: #3E6A05; width: fit-content">最常指定</span>
+          <h3 style="font-size: 19px; font-weight: 700">GRECA 方浪 · L4 — 屋頂與拱形骨架</h3>
+          <p class="muted" style="font-size: 14px; line-height: 1.6">浪距 76 mm，厚 0.7–0.8 mm。可順著隧道骨架彎曲；作物用擴散白，畜舍用透明。</p>
+          <a href="Product.html" class="btn btn-outline" style="margin-top: auto; width: fit-content">看 L4</a>
+        </div>
+      </div>
+      <div class="card" style="display: flex; flex-direction: column">
+        <div style="height: 170px; display: flex; align-items: center; justify-content: center; padding: 16px; background: #F3F6FA"><span class="muted" style="font-size: 13px">MINI L8 產品照片</span></div>
+        <div style="padding: 20px 22px 24px; display: flex; flex-direction: column; gap: 10px; flex: 1">
+          <span class="tag" style="background: #FFF6CC; color: #6B5600; width: fit-content">小彎弧</span>
+          <h3 style="font-size: 19px; font-weight: 700">MINI 小浪 · L8 — 小半徑拱形溫室</h3>
+          <p class="muted" style="font-size: 14px; line-height: 1.6">全系列浪距最小，能彎到比其他浪型更小的半徑，也常用於側牆。</p>
+          <a href="Product.html" class="btn btn-outline" style="margin-top: auto; width: fit-content">看 L8</a>
+        </div>
+      </div>
+      <div class="card" style="display: flex; flex-direction: column">
+        <div style="height: 170px; display: flex; align-items: center; justify-content: center; padding: 16px; background: #F3F6FA"><img src="assets/pd_L1.jpg" alt="角浪 L1" style="max-height: 140px; max-width: 100%; object-fit: contain"></div>
+        <div style="padding: 20px 22px 24px; display: flex; flex-direction: column; gap: 10px; flex: 1">
+          <span class="tag" style="background: #E3F0FB; color: #0E4176; width: fit-content">大跨距</span>
+          <h3 style="font-size: 19px; font-weight: 700">角浪 · L1 擴散板 — 大面積屋頂</h3>
+          <p class="muted" style="font-size: 14px; line-height: 1.6">浪距 190 mm，厚度最高 2.0 mm，桁條間距較大的蔬菜農場與堆肥場適用。</p>
+          <a href="Product.html" class="btn btn-outline" style="margin-top: auto; width: fit-content">看 L1</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 為什麼＋效益表（保留現站） -->
+<section style="padding: 64px 0; background: #F3F6FA">
+  <div class="wrap split">
+    <div style="display: flex; flex-direction: column; gap: 16px">
+      <span class="eyebrow">為什麼選 PC 採光浪板</span>
+      <h2 style="font-size: 30px; font-weight: 900">比玻璃堅固，比 PVC 耐用</h2>
+      <p style="font-size: 16px; line-height: 1.8">PC 採光浪板已是全球農業溫室覆蓋材料的首選。玻璃易碎又重，一般 PVC 板會黃變龜裂；PC 浪板則在一片板材裡同時具備耐衝擊、輕量好施工與長期清透。</p>
+      <p style="font-size: 16px; line-height: 1.8">立洋的板材表面有共擠 UV 保護層，防止日曬劣化，多年戶外使用仍維持穩定的透光率。</p>
+      <img src="assets/A01_0n4suxaje13pu3pvczru.jpg" alt="兩棟 PC 浪板溫室之間的走道" style="width: 100%; height: 240px; object-fit: cover; border-radius: 12px">
+    </div>
+    <div class="card" style="overflow-x: auto"><table class="spec">
+      <thead><tr><th style="width: 38%">效益</th><th>說明</th></tr></thead>
+      <tbody>
+        <tr><td><strong>透光率最高 90%</strong></td><td>透明板讓自然光最大化；擴散板把光線均勻散開，適合敏感作物</td></tr>
+        <tr><td><strong>高耐衝擊</strong></td><td>遠比玻璃或 PVC 堅固 — 耐冰雹、強風與大雨</td></tr>
+        <tr><td><strong>輕量、好安裝</strong></td><td>重量只有玻璃的一小部分；一般工具即可裁切，適用各種標準骨架</td></tr>
+        <tr><td><strong>可彎成拱形</strong></td><td>可橫向於浪紋彎曲 — 隧道式與拱形骨架的理想選擇</td></tr>
+        <tr><td><strong>共擠 UV 保護</strong></td><td>內建 UV 層防止黃變，10 年以上維持清透</td></tr>
+        <tr><td><strong>排水順暢</strong></td><td>浪型把雨水導離屋頂，降低暴雨時的載重</td></tr>
+        <tr><td><strong>成本效益高</strong></td><td>單層結構在溫和與亞熱帶氣候下極具價值</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
+<!-- 透明 vs 擴散（保留）＋比較 -->
+<section style="padding: 64px 0">
+  <div class="wrap split">
+    <div style="display: flex; flex-direction: column; gap: 16px">
+      <span class="eyebrow">透明還是擴散？</span>
+      <h2 style="font-size: 30px; font-weight: 900">您的作物適合哪一種</h2>
+      <div class="card" style="overflow-x: auto"><table class="spec">
+        <thead><tr><th>項目</th><th>透明 PC 浪板</th><th>擴散 PC 浪板</th></tr></thead>
+        <tbody>
+          <tr><td>透光率</td><td>最高 90%</td><td>65–80%（依產品）</td></tr>
+          <tr><td>光線分布</td><td>直射 / 集中</td><td>散射 / 均勻</td></tr>
+          <tr><td>適合</td><td>畜舍、禽舍、一般屋頂</td><td>蔬菜、蘭花、花卉、育苗</td></tr>
+          <tr><td>植株陰影</td><td>可能有熱點</td><td>幾乎無陰影，均勻覆蓋</td></tr>
+          <tr><td>UV 保護</td><td>共擠 UV 層</td><td>共擠 UV 層</td></tr>
+        </tbody>
+      </table></div>
+      <p class="muted" style="font-size: 15px; line-height: 1.7">葉菜、蘭花與育苗建議用擴散板。立洋在台灣的安裝案例顯示，擴散板取代透明板後，作物生長與產量均勻度有可量測的改善。</p>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 16px">
+      <span class="eyebrow">擴散板實際使用</span>
+      <h2 style="font-size: 30px; font-weight: 900">光線均勻，不燒葉</h2>
+      <img src="assets/jhgf.jpg" alt="擴散板下的香草溫室" style="width: 100%; height: 230px; object-fit: cover; border-radius: 12px">
+      <img src="assets/sdfg.jpg" alt="屋頂型太陽能溫室搭配擴散板" style="width: 100%; height: 230px; object-fit: cover; border-radius: 12px">
+      <p class="muted" style="font-size: 14px; line-height: 1.6">UV-PC 隔熱擴散浪板把陽光均勻分布、阻隔有害的 UVA（320–400 nm），並將部分 270–380 nm 波段轉換為有利生長的紅光（620–670 nm）。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 工程照片（保留） -->
+<section style="padding: 64px 0; background: #F3F6FA">
+  <div class="wrap" style="display: flex; flex-direction: column; gap: 24px">
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap">
+      <div style="display: flex; flex-direction: column; gap: 8px"><span class="eyebrow">工程照片</span><h2 style="font-size: 30px; font-weight: 900">遍布台灣農場的安裝實績</h2></div>
+      <a href="Article.html" style="font-weight: 700; text-decoration: none">全部 40 件溫室工程 →</a>
+    </div>
+    <div class="g c3" style="gap: 16px">
+      <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px"><img src="assets/A01_0n4suxaje13pu3pvczru.jpg" alt="" style="width: 100%; height: 210px; object-fit: cover; border-radius: 10px"><figcaption style="font-size: 13px; color: #5B6B7C">簡易溫室，台南市 · L1 擴散板</figcaption></figure>
+      <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px"><img src="assets/A01_2c61a8kqgmvxaccyjva8.jpg" alt="" style="width: 100%; height: 210px; object-fit: cover; border-radius: 10px"><figcaption style="font-size: 13px; color: #5B6B7C">水耕萵苣，雲林 · L4 擴散板</figcaption></figure>
+      <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px"><img src="assets/A01_1qx9ybhxm293tvgcuk6g.jpg" alt="" style="width: 100%; height: 210px; object-fit: cover; border-radius: 10px"><figcaption style="font-size: 13px; color: #5B6B7C">側牆包覆，桃園 · L4 透明</figcaption></figure>
+      <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px"><img src="assets/A01_0uiez28md9co6wx49779.jpg" alt="" style="width: 100%; height: 210px; object-fit: cover; border-radius: 10px"><figcaption style="font-size: 13px; color: #5B6B7C">農業倉儲天窗 · L1</figcaption></figure>
+      <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px"><img src="assets/A01_12zy55bs7c3zj0btnm9j.jpg" alt="" style="width: 100%; height: 210px; object-fit: cover; border-radius: 10px"><figcaption style="font-size: 13px; color: #5B6B7C">禽舍屋頂 · L8 透明</figcaption></figure>
+      <figure style="margin: 0; display: flex; flex-direction: column; gap: 8px"><img src="assets/A01_3utur9cbxyj74htz953p.jpg" alt="" style="width: 100%; height: 210px; object-fit: cover; border-radius: 10px"><figcaption style="font-size: 13px; color: #5B6B7C">堆肥場，台南 · L1 擴散板</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 案例＋常見問題（保留） -->
+<section style="padding: 64px 0">
+  <div class="wrap split">
+    <div style="display: flex; flex-direction: column; gap: 16px">
+      <span class="eyebrow">成功案例</span>
+      <h2 style="font-size: 30px; font-weight: 900">農友實際量到的成果</h2>
+      <a href="Article.html" class="card" style="display: flex; gap: 16px; padding: 14px; text-decoration: none; color: inherit; align-items: center"><img src="assets/jhgf.jpg" alt="" style="width: 120px; height: 84px; object-fit: cover; border-radius: 8px; flex-shrink: 0"><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-weight: 700; color: #0E4176">太陽能溫室 — 桃園香草栽培</span><span class="muted" style="font-size: 13px; line-height: 1.6">擴散板做到 50–70% 遮光，生長週期加快、提早採收。</span></span></a>
+      <a href="Article.html" class="card" style="display: flex; gap: 16px; padding: 14px; text-decoration: none; color: inherit; align-items: center"><img src="assets/A01_2c61a8kqgmvxaccyjva8.jpg" alt="" style="width: 120px; height: 84px; object-fit: cover; border-radius: 8px; flex-shrink: 0"><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-weight: 700; color: #0E4176">雲林蔬菜栽培區</span><span class="muted" style="font-size: 13px; line-height: 1.6">多連棟溫室的葉菜，全區光線均勻。</span></span></a>
+      <a href="Article.html" class="card" style="display: flex; gap: 16px; padding: 14px; text-decoration: none; color: inherit; align-items: center"><img src="assets/A01_3utur9cbxyj74htz953p.jpg" alt="" style="width: 120px; height: 84px; object-fit: cover; border-radius: 8px; flex-shrink: 0"><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-weight: 700; color: #0E4176">台南禽舍堆肥場</span><span class="muted" style="font-size: 13px; line-height: 1.6">有遮蓋的作業區，下雨天照常運作。</span></span></a>
+    </div>
+    <div class="faq" style="display: flex; flex-direction: column">
+      <span class="eyebrow" style="margin-bottom: 8px">常見問題</span>
+      <h2 style="font-size: 30px; font-weight: 900; margin-bottom: 8px">溫室常見問題</h2>
+      <details open><summary>PC 採光浪板溫室能用多久？<span aria-hidden="true">+</span></summary><p>正確安裝下可用 10 年以上。共擠 UV 層防止黃變，透光率長期維持。</p></details>
+      <details><summary>可以裁成客製尺寸嗎？<span aria-hidden="true">+</span></summary><p>可以 — 用細齒圓鋸或線鋸即可裁切整齊，任何骨架形狀都能配合，包含拱形結構。</p></details>
+      <details><summary>會擋掉對植物有害的紫外線嗎？<span aria-hidden="true">+</span></summary><p>UV 層阻隔造成劣化的波段，同時讓光合作用需要的全光譜可見光通過。</p></details>
+      <details><summary>透明和擴散要選哪個？<span aria-hidden="true">+</span></summary><p>畜舍、禽舍選透明；蔬菜、蘭花與需要均勻無陰影光線的敏感作物選擴散板。</p></details>
+      <details><summary>適合弧形或拱形屋頂嗎？<span aria-hidden="true">+</span></summary><p>適合。浪板可橫向彎曲。MINI 小浪（L8）最適合較小半徑的彎弧。</p></details>
+      <details><summary>屋頂和側牆可以都用嗎？<span aria-hidden="true">+</span></summary><p>可以 — 許多立洋案例屋頂與側牆都用 PC 浪板，整棟採光一致。</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 詢價 -->
+<section id="inquiry" style="padding: 64px 0; background: #0E4176; color: #FFFFFF">
+  <div class="wrap g c2" style="grid-template-columns: 1fr 1.2fr; gap: 48px; align-items: center">
+    <div style="display: flex; flex-direction: column; gap: 14px">
+      <span class="eyebrow" style="color: #FEE100">溫室報價</span>
+      <h2 style="color: #FFFFFF; font-size: 32px; font-weight: 900">把溫室尺寸告訴我們</h2>
+      <p style="font-size: 16px; line-height: 1.7; color: rgba(255,255,255,.9)">屋頂面積、骨架形式（拱形或山形）與作物。我們推薦浪型、厚度與顏色，2 個工作天內報價。</p>
+    </div>
+    <form class="card" style="padding: 24px; display: flex; flex-direction: column; gap: 14px; color: #1C2733" action="#">
+      <div class="g c2" style="gap: 14px">
+        <div><label class="f" for="a-name">姓名 *</label><input id="a-name" type="text" required></div>
+        <div><label class="f" for="a-email">E-mail *</label><input id="a-email" type="email" required></div>
+        <div><label class="f" for="a-country">國家 / 地區 *</label><input id="a-country" type="text" required></div>
+        <div><label class="f" for="a-crop">作物 / 用途</label><select id="a-crop"><option>蔬菜</option><option>蘭花與花卉</option><option>果園與育苗</option><option>畜禽</option><option>其他</option></select></div>
+      </div>
+      <div><label class="f" for="a-msg">屋頂面積、骨架形式與數量 *</label><textarea id="a-msg" rows="3" required></textarea></div>
+      <button type="submit" class="btn btn-blue" style="width: 100%; min-height: 52px">索取報價</button>
+    </form>
+  </div>
+</section>
+
+<footer style="font-family: Inter, 'Noto Sans TC', 'Microsoft JhengHei', system-ui, sans-serif; background: #0E4176; color: #FFFFFF; box-sizing: border-box">
+  <div style="max-width: 1240px; margin: 0 auto; padding: 56px 32px 28px; box-sizing: border-box">
+    <div class="foot-grid" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 40px">
+      <div style="display: flex; flex-direction: column; gap: 16px">
+        <div style="background: #FFFFFF; border-radius: 8px; padding: 10px 14px; width: fit-content">
+          <img src="assets/logo.jpg" alt="立洋塑膠有限公司" style="height: 40px; width: auto; display: block">
+        </div>
+        <p style="margin: 0; font-size: 14px; line-height: 1.7; color: rgba(255,255,255,.85)">立洋塑膠創立於 1994 年，是專業的 PC 採光浪板製造商，產品銷售超過 30 個國家。63 種浪型、全面共擠 UV 保護層、年產能 3,600 公噸。</p>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap">
+          <span style="font-size: 12px; font-weight: 700; padding: 5px 10px; border-radius: 999px; background: rgba(255,255,255,.12); color: #FFFFFF">10 年產品壽命</span>
+          <span style="font-size: 12px; font-weight: 700; padding: 5px 10px; border-radius: 999px; background: rgba(255,255,255,.12); color: #FFFFFF">QUV 耐候測試</span>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <h3 style="margin: 0 0 6px; font-size: 14px; letter-spacing: .1em; color: #FEE100">產品</h3>
+        <a href="Category.html" style="color: #FFFFFF; text-decoration: none; font-size: 14px">PC 採光浪板</a>
+        <a href="Category.html" style="color: #FFFFFF; text-decoration: none; font-size: 14px">PC 天窗採光板</a>
+        <a href="Application.html" style="color: #FFFFFF; text-decoration: none; font-size: 14px">UV-PC 隔熱擴散板</a>
+        <a href="Category.html" style="color: #FFFFFF; text-decoration: none; font-size: 14px">浪型對照查詢</a>
+        <a href="Contact.html" style="color: #FFFFFF; text-decoration: none; font-size: 14px">客製浪型開發</a>
+        <a href="#" style="color: #FFFFFF; text-decoration: none; font-size: 14px">型錄與文件下載</a>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <h3 style="margin: 0 0 6px; font-size: 14px; letter-spacing: .1em; color: #FEE100">應用</h3>
+        <a href="Application.html" style="color: #FFFFFF; text-decoration: none; font-size: 14px">溫室與農業</a>
+        <a href="Application.html" style="color: #FFFFFF; text-decoration: none; font-size: 14px">廠房屋頂與天窗採光</a>
+        <a href="Application.html" style="color: #FFFFFF; text-decoration: none; font-size: 14px">建築與公共設施</a>
+        <a href="Application.html" style="color: #FFFFFF; text-decoration: none; font-size: 14px">庭院涼棚、車棚與 DIY</a>
+        <a href="Article.html" style="color: #FFFFFF; text-decoration: none; font-size: 14px">工程案例</a>
+        <a href="Article.html" style="color: #FFFFFF; text-decoration: none; font-size: 14px">知識文章與選購指南</a>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <h3 style="margin: 0 0 6px; font-size: 14px; letter-spacing: .1em; color: #FEE100">聯絡我們</h3>
+        <p style="margin: 0; font-size: 14px; line-height: 1.7; color: rgba(255,255,255,.9)">743 台南市山上區明和里興旺路 438 號</p>
+        <a href="#" style="color: #FFFFFF; text-decoration: none; font-size: 14px">電話 +886-6-578-4093 / 578-3360</a>
+        <a href="#" style="color: #FFFFFF; text-decoration: none; font-size: 14px">傳真 +886-6-578-4365</a>
+        <a href="#" style="color: #FFFFFF; text-decoration: none; font-size: 14px">sales@lyon.com.tw</a>
+        <a href="#" style="color: #FFFFFF; text-decoration: none; font-size: 14px">WhatsApp / LINE［待確認］</a>
+        <a href="Contact.html" style="display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 18px; border-radius: 8px; background: #FFFFFF; color: #0E4176; font-weight: 700; font-size: 14px; text-decoration: none; width: fit-content; margin-top: 6px">索取報價</a>
+      </div>
+    </div>
+    <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.2); display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; font-size: 13px; color: rgba(255,255,255,.75)">
+      <span>© 2026 立洋塑膠有限公司 LYON PLASTIC CO., LTD. 版權所有</span>
+      <div style="display: flex; gap: 18px; flex-wrap: wrap">
+        <a href="#" style="color: rgba(255,255,255,.85); text-decoration: none">隱私權政策</a>
+        <a href="#" style="color: rgba(255,255,255,.85); text-decoration: none">網站地圖</a>
+        <a href="#" style="color: rgba(255,255,255,.85); text-decoration: none">English</a>
+        <a href="#" style="color: #FFFFFF; font-weight: 700; text-decoration: none">繁體中文</a>
+        <a href="#" style="color: rgba(255,255,255,.85); text-decoration: none">Español</a>
+      </div>
+    </div>
+  </div>
+</footer>
+</div></body></html>
